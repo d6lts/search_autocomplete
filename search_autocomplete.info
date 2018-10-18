@@ -4,3 +4,8 @@ core = 6.x
 package = Search
 version = 2.5
 dependencies[] = search
+; Information added by Drupal 6 LTS vendors on 2018-10-17
+version = "6.x-2.6"
+core = "6.x"
+project = "search_autocomplete"
+datestamp = "1539838236"
