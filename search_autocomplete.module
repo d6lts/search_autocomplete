@@ -62,7 +62,7 @@ function search_autocomplete_autocomplete($string = '') {
       $sug_link                 = array_pop($sug_link_vals);
       $sug                      = html_entity_decode(check_plain($sug_elem), ENT_QUOTES);
       $sug_url                  = html_entity_decode(check_plain($sug_link), ENT_QUOTES);
-      $sug_pref                 = trim($prefix) . ' ' . $sug;
+      $sug_pref                 = check_plain(trim($prefix) . ' ' . $sug);
       $matches[trim($sug_pref)] = url(trim($sug_url));               // add the suggestion to be returned
     }
   }
